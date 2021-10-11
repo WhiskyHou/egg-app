@@ -10,6 +10,22 @@ export default (appInfo: EggAppInfo) => {
   // add your egg config in here
   config.middleware = [];
 
+  config.cluster = {
+    listen: {
+      path: '',
+      port: 3000,
+      hostname: '0.0.0.0',
+    },
+  };
+
+  // config.mongoose = {
+  //   client: {
+  //     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  //     // @ts-ignore
+  //     url: 'mongodb://localhost:27017/test', options: {},
+  //   },
+  // };
+
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
