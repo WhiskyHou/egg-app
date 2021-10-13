@@ -10,13 +10,16 @@ export default (appInfo: EggAppInfo) => {
   // add your egg config in here
   config.middleware = [];
 
-  config.cluster = {
-    listen: {
-      path: '',
-      port: 3000,
-      hostname: '0.0.0.0',
-    },
-  };
+  // config.security = { domainWhiteList: [ 'http://10.240.5.48:8080' ] };
+  // config.cors = { origin: '*', allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH' };
+
+  // config.cluster = {
+  //   listen: {
+  //     path: '',
+  //     port: 3000,
+  //     hostname: '0.0.0.0',
+  //   },
+  // };
 
   // config.mongoose = {
   //   client: {

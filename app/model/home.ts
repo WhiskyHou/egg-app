@@ -5,6 +5,6 @@ const schema = new Schema({
   agent: String,
 });
 
-const Model = model('record', schema, 'schema');
+const Model = model('record', schema, 'record');
 
 export default Model;
